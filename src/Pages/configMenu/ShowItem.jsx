@@ -85,7 +85,7 @@ const ShowItem = props => {
 
     
     const editRow = row =>{
-        history.push(`/updateMenu/${row}`)
+        history.push(`/updateMenuItem/${id}/${row}`)
         // console.log("EDITAR",row)
     }
 
@@ -97,7 +97,7 @@ const ShowItem = props => {
         <div>
             <div className="my-3 p-3 bg-body rounded shadow-sm">
                 <div className="contentBtn">
-                    <Link type="button" to={`/createMenu`} className="btn btn-primary">Agregar Item</Link>
+                    <Link type="button" to={`/createMenuItem/${id}`} className="btn btn-primary">Agregar Item</Link>
                 </div>
                 
                 <div>

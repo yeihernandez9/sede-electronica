@@ -14,6 +14,8 @@ import CreateEnterprice from '../Pages/configEnterprice/CreateEnterprice';
 import ShowMenu from '../Pages/configMenu/ShowMenu';
 import ShowItem from '../Pages/configMenu/ShowItem';
 import UpdateMenu from '../Pages/configMenu/UpdateMenu';
+import CreateMenuItem from '../Pages/configMenu/CreateMenuItem';
+import UpdateMenuItem from '../Pages/configMenu/UpdateMenuItem';
 
 
 import {HOME, 
@@ -26,6 +28,8 @@ import {HOME,
     ENTERPRICE,
     SHOWITEMMENU,
     UPDATEMENU,
+    CREATEMENUITEM,
+    UPDATEMENUITEM
 
 }  from './Path'
 
@@ -42,8 +46,10 @@ const Routes = () => {
                 <RoutePrivate component={Logout} path={LOGOUT}/>
                 <RoutePrivate component={ShowMenu} path={MENU}/>
                 <RoutePrivate component={CreateMenu} path={CREATEMENU}/>
+                <RoutePrivate component={CreateMenuItem} path={CREATEMENUITEM}/>
                 <RoutePrivate component={ShowItem} path={SHOWITEMMENU}/>
                 <RoutePrivate component={UpdateMenu} path={UPDATEMENU}/>
+                <RoutePrivate component={UpdateMenuItem} path={UPDATEMENUITEM}/>
                 <RoutePrivate component={CreateEnterprice} path={ENTERPRICE}/>
         </Switch>
     )

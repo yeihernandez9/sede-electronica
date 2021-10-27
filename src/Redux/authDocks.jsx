@@ -1,4 +1,5 @@
 import axios from 'axios'
+import {DEV, PRO} from './configEnv'
 
 // constantes
 const dataInicial = {
@@ -25,7 +26,7 @@ export default function usuarioReducer(state = dataInicial, action){
 
 export const signIn = (body) => async (dispatch) => {
     try{
-        const res = await axios.post('http://localhost:8080/auth/login',body)
+        const res = await axios.post(`${PRO}/auth/login`,body)
         .then(
             res =>{
                 dispatch({
@@ -46,7 +47,7 @@ export const signIn = (body) => async (dispatch) => {
 
 export const signUp = (body) => async (dispatch) => {
     try{
-        const res = await axios.post('http://localhost:8080/auth/register',body)
+        const res = await axios.post(`${PRO}/auth/register`,body)
         .then(
             res =>{
                 dispatch({
