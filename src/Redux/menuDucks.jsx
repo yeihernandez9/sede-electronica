@@ -257,3 +257,29 @@ export const updateMenu = (body, token) => async (dispatch) => {
     }catch(error){
     }
 }
+
+export const updateMenuItem = (body, token) => async (dispatch) => {
+    let config = {
+        headers: {
+          'Authorization': 'Bearer ' + token
+        }
+      }
+    try{
+        const res = await axios.put(`${PRO}/api/v1/menuPrincipal/updateMenu`,body, config)
+        .then(
+            res =>{
+                dispatch({
+                    type: GET_ITEM,
+                    payload: res.data
+                })
+            }
+        ).catch(err => {
+            dispatch({
+                type: GET_ITEM,
+                payload: err.response.data
+            })
+        })
+        
+    }catch(error){
+    }
+}
