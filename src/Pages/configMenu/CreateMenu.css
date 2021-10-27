@@ -1,0 +1,12 @@
+.btnColor{
+    color: white !important;
+}
+
+.contentBtn{
+    display: flex;
+    justify-content: end;
+}
+
+.contentGroupBtn{
+    
+}

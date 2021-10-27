@@ -1,0 +1,11 @@
+.sidebarStyle{
+    width: 85.4vw;
+    margin-left: 280px;
+}
+.container{
+    margin-left: 24vw;
+    position: fixed;
+    width: 71vw;
+    z-index: 1000;
+    margin-top: 1vw;
+}

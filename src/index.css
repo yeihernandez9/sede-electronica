@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.colorTopBar{
+  background: #36c;
+}
+.colorPrincipal{
+  color:#36c;
+}
+
+.colorMenuPrincipal{
+  background: #E6EFFD;
+}
+
+.button-custom{
+  border-radius: 24px!important;
+}
